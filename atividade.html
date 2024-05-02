@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
 
-var idade = parseInt(prompt("por favor insira sua idade"));
-if ( idade < 0 ) {
-    alert("idade inválida;");
-}else if ( idade >=0 && idade <= 17 ){
-    alert("você é menor de idade");
-}else if ( idade >= 18 && idade <= 64 ){
-    alert("você é um adulto");
-}else {
-    alert("você é um idoso");
+<script>
+
+let nota1 = parseFloat(prompt("insira a nota da primeira avaliação"));
+let nota2 = parseFloat(prompt("insira a nota da segunda avaliação"));
+
+if ( nota1 >= 0 && nota1 <=10 && nota2 >= 0 && nota2 <=10 ){
+     let media = (nota1 + nota2) /2;
+if (media >= 6){
+    alert("Prabéns!você passou na discliplina com média + media.toFixed(1)");
+}else{
+    alert ("Infelizmente,você reprovou na discliplina com média + media.toFixead(1)");
+}
+} else{
+    alert("as notas inseridas são inválidas.Certifique-se de que estão no intervalo de 0 a 10");
 }
 
 
+
+
 </script>
-</body>
-</html>
